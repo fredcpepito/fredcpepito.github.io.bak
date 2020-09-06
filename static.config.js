@@ -2,6 +2,8 @@ import path from 'path'
 import axios from 'axios'
 
 export default {
+  siteRoot: "https://fredcpepitto.github.io",
+  basePath: "fredcpepitto.github.io",
   getRoutes: async () => {
     const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'
